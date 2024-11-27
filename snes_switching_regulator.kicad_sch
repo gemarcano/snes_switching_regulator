@@ -3179,7 +3179,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "/mnt/Luna/home/gabriel/Projects/SNES_custom_regulator/spice/TPS62932_PSPICE_TRANS/TPS62932_TRANS.LIB"
+		(property "Sim.Library" "./design/spice/TPS62932_PSPICE_TRANS/TPS62932_TRANS.LIB"
 			(at 133.35 91.44 0)
 			(effects
 				(font
