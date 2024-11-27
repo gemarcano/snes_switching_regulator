@@ -1,0 +1,17 @@
+.title KiCad schematic
+.inc TPS62932_PSPICE_TRANS/TPS62932_TRANS.LIB 
+V1 /Vin 0 PULSE (0 9 1u 1u 1 1)
+C1 /Vin 0 300u
+C4 Net-_U1-SS_ 0 13n
+R4 /Vin Net-_U1-EN_ 680k
+R5 Net-_U1-EN_ 0 120k
+R3 Net-_U1-RT_ 0 75k
+xU1 Net-_U1-BST_ Net-_U1-EN_ Net-_U1-FB_ 0 Net-_U1-RT_ Net-_U1-SS_ Net-_U1-SW_ /Vin TPS62932_TRANS STEADY_STATE=0 EN_FSS=0
+C3 Net-_C3-Pad1_ Net-_U1-SW_ 100n
+R6 Net-_U1-BST_ Net-_C3-Pad1_ 0
+R1 Net-_U1-FB_ 0 12k
+L1 Net-_U1-SW_ /Vout 15u
+R2 Net-_U1-FB_ /Vout 63.4k
+C2 /Vout 0 300u
+RLOAD /Vout 0 5
+.end
